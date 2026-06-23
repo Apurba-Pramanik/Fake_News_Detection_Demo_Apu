@@ -24,21 +24,27 @@ with col2:
 
             if text == "modi died yesterday":
                 verdict_text = "🔴 Fake: No matching trusted news!"
+                st.error(verdict_text)
+
             elif text == "lionel messi scored a goal":
-                verdict_text = "🟢 Real: Matched news!"
+                verdict_text = "🟢 Real: Matched trusted news!"
+                st.success(verdict_text)
+
+                # Show 3 hardcoded sample headlines
+                st.markdown("**Matched Headlines:**")
+                st.write("- Messi scores decisive goal in Copa America")
+                st.write("- Argentina celebrates Messi’s stunning strike")
+                st.write("- Lionel Messi leads Argentina to victory")
+
             elif text == "the weather is nice":
                 verdict_text = "🟡 Neutral: No matching news found!"
-            else:
-                verdict_text = "🟡 Needs Review "
-
-            if "Real" in verdict_text:
-                st.success(verdict_text)
-            elif "Fake" in verdict_text:
-                st.error(verdict_text)
-            else:
                 st.warning(verdict_text)
 
-        st.info("Demo mode: matches not shown.")
+            else:
+                verdict_text = "🟡 Needs Review"
+                st.warning(verdict_text)
+
+        st.info("Demo mode: matches shown only for Real case.")
 
 with st.sidebar:
     if st.button("Clear Cache"):
