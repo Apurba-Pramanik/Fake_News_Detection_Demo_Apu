@@ -44,7 +44,7 @@ with col2:
                 verdict_text = "🟡 Needs Review"
                 st.warning(verdict_text)
 
-        st.info("Demo mode: matches shown only for Real case.")
+        st.info("")
 
 with st.sidebar:
     if st.button("Clear Cache"):
