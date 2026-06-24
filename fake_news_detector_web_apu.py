@@ -24,7 +24,7 @@ with col2:
 
             if text == "Cristiano Ronaldo died in an accident 1 month ago.":
                 verdict_text = "🔴 Fake: No matching trusted news!"
-                st.error(verdict_text)
+                st.success(verdict_text)
                 st.markdown("**Contradictory Headlines:**")
                 st.write("- Cristiano Ronaldo scored a brace against Uzbekistan in FIFA world cup group stage match.")
 
