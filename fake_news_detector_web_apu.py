@@ -22,12 +22,13 @@ with col2:
         else:
             text = user_input.strip().lower()
 
-            if text == "Cristiano Ronaldo died in an accident 1 month ago.":
+            if text == "cristiano ronaldo died in an accident 1 month ago.":
                 verdict_text = "🔴 Fake: No matching trusted news!"
-                st.success(verdict_text)
+                st.error(verdict_text)
                 st.markdown("**Contradictory Headlines:**")
                 st.write("- Cristiano Ronaldo scored a brace against Uzbekistan in FIFA world cup group stage match.")
-
+                st.write("- Cristiano Ronaldo shatters multiple records with two goals as Portugal beat Uzbekistan 3-0")
+                
             elif text == "lionel messi scored a goal":
                 verdict_text = "🟢 Real: Matched trusted news!"
                 st.success(verdict_text)
