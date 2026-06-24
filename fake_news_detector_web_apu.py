@@ -6,7 +6,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.markdown("<h1 style='text-align: center; color: #2E86C1;'>📰 Fake News Detection Demo</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #2E86C1;'>📰 Fake News Detection </h1>", unsafe_allow_html=True)
 st.markdown("---")
 
 col1, col2 = st.columns([1, 1])
