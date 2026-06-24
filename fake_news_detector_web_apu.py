@@ -32,7 +32,7 @@ with col2:
 
                 # Show 3 hardcoded sample headlines
                 st.markdown("**Matched Headlines:**")
-                st.write("- Messi scores decisive goal in Copa America")
+                st.write("- Messi scores decisive goal in the world cup match against Austria.")
                 st.write("- Argentina celebrates Messi’s stunning strike")
                 st.write("- Lionel Messi leads Argentina to victory")
 
